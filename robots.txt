@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://maaghuradigital.page.gd/sitemap.xml
+Host: maaghuradigital.page.gd

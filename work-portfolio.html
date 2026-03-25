@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maa Ghura Digital | Team & Sample Work | Navi Mumbai</title>
+  <meta name="description" content="Meet the Maa Ghura Digital team and see sample work for CRM, lead systems, and websites in Navi Mumbai." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://maaghuradigital.page.gd/work-portfolio.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+      color: #111827;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    section { padding: 64px 0; }
+
+    /* Header / nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: #ffffff;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-wrap img { height: 40px; width: auto; }
+    .logo-text {
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: #111827;
+      font-size: 0.86rem;
+      text-transform: uppercase;
+    }
+    .logo-text span { color: #facc15; }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+    .nav-links a {
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #facc15;
+      transition: width 0.22s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta { display: flex; align-items: center; gap: 10px; }
+    .btn-small {
+      font-size: 0.76rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid #facc15;
+      color: #111827;
+      background: #facc15;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .btn-small:hover { background: #fbbf24; }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .nav-toggle span {
+      width: 22px;
+      height: 2px;
+      background: #111827;
+    }
+
+    .nav-links-mobile {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0 16px;
+      font-size: 0.9rem;
+      background: #ffffff;
+      color: #4b5563;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* Section headings */
+    .section-label {
+      font-size: 0.76rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: #020617;
+    }
+    .section-title span { color: #b45309; }
+    .section-sub {
+      font-size: 0.9rem;
+      color: #6b7280;
+      max-width: 520px;
+    }
+
+    /* Hero */
+    .hero {
+      background: radial-gradient(circle at top left, #111827, #020617);
+      color: #f9fafb;
+      padding: 72px 0 80px;
+    }
+    .hero-title {
+      margin-top: 20px;
+      font-size: clamp(2.0rem, 3.2vw, 2.7rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+    .hero-title span { color: #facc15; }
+    .hero-sub {
+      margin-top: 14px;
+      max-width: 560px;
+      font-size: 0.96rem;
+      color: #e5e7eb;
+    }
+    .hero-sub strong { color: #facc15; }
+
+    /* FOUNDERS SECTION */
+    .founders-section {
+      background: #fffbeb;
+    }
+    .founders-grid {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .founder-card {
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+    }
+    .founder-photo-wrapper {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 24px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 4px solid #facc15;
+      box-shadow: 0 12px 32px rgba(250,204,21,0.18);
+      background: #f3f4f6;
+    }
+    .founder-photo-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    .founder-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .founder-role {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #b45309;
+      margin-bottom: 12px;
+    }
+    .founder-desc {
+      font-size: 0.95rem;
+      color: #4b5563;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    /* ENHANCED PORTFOLIO SECTION */
+    .portfolio-section { 
+      background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+      position: relative;
+    }
+    
+    .portfolio-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    
+    .portfolio-card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 32px 28px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 12px 24px rgba(0,0,0,0.04);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .portfolio-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #facc15, #fbbf24);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08), 0 24px 48px rgba(250,204,21,0.12);
+      border-color: #facc15;
+    }
+    
+    .portfolio-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .portfolio-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: linear-gradient(135deg, #fffbeb, #fef3c7);
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #92400e;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    
+    .portfolio-pill span {
+      width: 8px;
+      height: 8px;
+      background: #facc15;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.9); }
+    }
+    
+    .portfolio-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 14px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+    
+    .portfolio-body {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    
+    .portfolio-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #b45309;
+      transition: all 0.2s ease;
+      margin-top: 12px;
+    }
+    
+    .portfolio-link:hover {
+      color: #92400e;
+      gap: 10px;
+    }
+
+    /* Team section */
+    .team-section { background: #f3f4f6; }
+    .team-grid {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .team-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 10px 20px rgba(0,0,0,0.04);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .team-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+      border: 3px solid #facc15;
+      box-shadow: 0 4px 12px rgba(250,204,21,0.2);
+    }
+    .team-role {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #b45309;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .team-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    .team-note {
+      font-size: 0.9rem;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background: #020617;
+      color: #9ca3af;
+      padding: 40px 16px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .hero { padding-top: 64px; }
+      .founder-photo-wrapper { max-width: 380px; }
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="Maa Ghura Digital Logo" />
+          <div class="logo-text">MAA <span>GHURA</span> DIGITAL</div>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="area/area.html">Our Areas</a>
+          <a href="#founders">Founders</a>
+          <a href="#portfolio">Sample Work</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <button class="btn-small" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book a Call
+          </button>
+        </div>
+
+        <div class="nav-toggle" id="navToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+
+      <div class="nav-links-mobile" id="navMobile">
+        <a href="index.html" onclick="toggleNav()">Home</a>
+        <a href="area/area.html" onclick="toggleNav()">Our Areas</a>
+        <a href="#founders" onclick="toggleNav()">Founders</a>
+        <a href="#portfolio" onclick="toggleNav()">Sample Work</a>
+        <a href="#team" onclick="toggleNav()">Team</a>
+        <a href="#contact" onclick="toggleNav()">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div>
+        <div class="section-label" style="color: #9ca3af;">MGD - OUR WORK & STORY</div>
+        <h1 class="hero-title">Main Driving Power to our <span>Work</span> & Our Team</h1>
+        <p class="hero-sub">
+          A quick look at our Founder's and their achievements, and the people
+          behind the Maa Ghura Digital. <strong>Execution-first, no fluff.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Section -->
+  <section id="founders" class="founders-section">
+    <div class="container">
+      <div>
+        <div class="section-label">LEADERSHIP</div>
+        <h2 class="section-title">Director's <span>Board</span></h2>
+        <p class="section-sub">
+          The person driving Maa Ghura Digital with execution-first mindset and deep tech + business understanding.
+        </p>
+      </div>
+
+      <div class="founders-grid">
+        <div class="founder-card">
+          <div class="founder-photo-wrapper">
+            <img src="shivam-photo.png" alt="Shivam Shukla" />
+          </div>
+          <div class="founder-name">Manish Singh & Shivam Shukla</div>
+          <div class="founder-role">Founder & Operations Lead</div>
+          <p class="founder-desc">
+            Operations & delivery focused | Ensures smooth execution across client projects and team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Team -->
+  <section id="team" class="team-section">
+    <div class="container">
+      <div>
+        <div class="section-label">MGD Crew</div>
+        <h2 class="section-title">Core <span>Team</span></h2>
+        <p class="section-sub">
+          A lean execution unit – developers, operations and data – focused on keeping your CRM and funnels running smoothly.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="Developers/1.jpg" alt="Developer Team Lead" class="team-photo" />
+          <div class="team-role">Digvijay Rathi</div>
+          <div class="team-name">Developer Team Lead</div>
+          <p class="team-note">Owns overall CRM architecture, code quality and deployment pipelines.</p>
+        </div>
+        <div class="team-card">
+          <img src="Developers/2.jpg" alt="Frontend Specialist" class="team-photo" />
+          <div class="team-role">Bhishwajeet Haldar</div>
+          <div class="team-name">Frontend Specialist</div>
+          <p class="team-note">Crafts fast landing pages and dashboards with responsive layouts.</p>
+        </div>
+        <div class="team-card">
+          <img src="Developers/3.jpg" alt="Backend & Integrations" class="team-photo" />
+          <div class="team-role">Omkar Wadkar</div>
+          <div class="team-name">Backend & Integrations</div>
+          <p class="team-note">Handles APIs, databases and communication channel integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div>
+        <div class="section-label">Best Candidates with Coding Experience & IT</div>
+        <h2 class="section-title">Website Development <span>Team</span></h2>
+        <p class="section-sub">
+          From hosting to website development, we got everything under control.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-pill"><span></span>Front END Developers</div>
+          <div class="portfolio-title">HTML Designer</div>
+          <div class="portfolio-body">
+            HTML Designer mostly designs the Front END of the website and mostly there are multiple drafts made by the interns and thus we get a lot of options / Template to begin our work with. This way we could achieve client's Expectation early.
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-pill"><span></span>Interface & Experience</div>
+          <div class="portfolio-title">UI/UX Designer</div>
+          <div class="portfolio-body">
+            Designing how the Files are to be stored and managed, How things / information flows in the website and which page take you to which page, all this is been determined & designed under UI/UX Designer.
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-pill"><span></span>Manage Database</div>
+          <div class="portfolio-title">Back END Developer</div>
+          <div class="portfolio-body">
+            Managing Server, MySQL, PHP & Database of the website. Complete backend processing is handled by them.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="portfolio-section">
+    <div class="container">
+      <div>
+        <div class="section-label">Work with MGD</div>
+        <h2 class="section-title">Discuss a <span>project</span></h2>
+        <p class="section-sub">
+          Share a brief about your current tools and what you want to improve.
+        </p>
+      </div>
+      <div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:12px;">
+        <a href="https://wa.me/919004269842?text=Hi%20Maa%20Ghura%20Digital..." target="_blank">
+          <button class="btn-small">Chat on WhatsApp</button>
+        </a>
+        <a href="mailto:maaghuradigital@gmail.com">
+          <button class="btn-small" style="background:#fff; border-color:#d1d5db; color:#111827;">Send Email</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="text-align:center; max-width:600px; margin:0 auto;">
+        <div style="font-weight:700; color:#e5e7eb; font-size:1.1rem; margin-bottom:12px;">
+          MAA <span style="color:#facc15;">GHURA</span> DIGITAL
+        </div>
+        <p style="margin-bottom:16px;">
+          Technology partner for CRM development, lead generation, websites & IT infrastructure.
+        </p>
+        <p style="font-size:0.85rem; opacity:0.8;">
+          © 2026 Maa Ghura Digital. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    function toggleNav() {
+      navMobile.style.display = navMobile.style.display === 'flex' ? 'none' : 'flex';
+    }
+    if (navToggle) navToggle.addEventListener('click', toggleNav);
+  </script>
+</body>
+</html>

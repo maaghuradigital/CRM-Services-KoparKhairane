@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terms & Conditions | Maa Ghura Digital - Navi Mumbai</title>
+  <meta name="description" content="Terms and conditions for Maa Ghura Digital, Navi Mumbai digital solutions provider." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://maaghuradigital.page.gd/terms.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+      color: #111827;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Layout helpers */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    section { padding: 80px 0 64px; }
+
+    /* Header / nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: #ffffff;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-wrap img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: #111827;
+      font-size: 0.86rem;
+      text-transform: uppercase;
+    }
+    .logo-text span {
+      color: #facc15;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+    .nav-links a {
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #facc15;
+      transition: width 0.22s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-small {
+      font-size: 0.76rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid #facc15;
+      color: #111827;
+      background: #facc15;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .btn-small:hover {
+      background: #fbbf24;
+      color: #111827;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .nav-toggle span {
+      width: 22px;
+      height: 2px;
+      background: #111827;
+    }
+
+    .nav-links-mobile {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0 16px;
+      font-size: 0.9rem;
+      background: #ffffff;
+      color: #4b5563;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* Section styles */
+    .section-label {
+      font-size: 0.76rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+      color: #020617;
+    }
+    .section-title span {
+      color: #b45309;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: #4b5563;
+      max-width: 800px;
+      margin-bottom: 48px;
+    }
+
+    /* Terms specific styles */
+    .terms-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: 0 20px 50px rgba(15,23,42,0.08);
+      margin-bottom: 64px;
+    }
+
+    .company-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid #fffbeb;
+    }
+    .company-logo-side {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .company-logo-side img {
+      height: 90px;
+    }
+    .company-logo-text {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #111827;
+    }
+    .company-logo-text small {
+      display: block;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    .company-contact {
+      text-align: right;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .company-contact p {
+      margin-bottom: 8px;
+    }
+    .company-contact strong {
+      color: #111827;
+    }
+
+    .terms-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 0.95rem;
+    }
+    .terms-table th, .terms-table td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .terms-table th {
+      background: #fffbeb;
+      color: #b45309;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+    }
+    .terms-table a {
+      color: #f97316;
+      font-weight: 600;
+    }
+    .terms-table a:hover {
+      text-decoration: underline;
+    }
+
+    .service-section {
+      margin-bottom: 64px;
+    }
+    .service-section h3 {
+      font-size: 1.8rem;
+      color: #b45309;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+    .service-section h4 {
+      font-size: 1.2rem;
+      color: #111827;
+      margin: 32px 0 16px;
+      font-weight: 600;
+    }
+    .service-section ul {
+      list-style: none;
+      margin: 16px 0;
+    }
+    .service-section li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      color: #4b5563;
+    }
+    .service-section li::before {
+      content: "●";
+      color: #f97316;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+    }
+    .service-section li ul {
+      margin-top: 8px;
+      margin-left: 20px;
+    }
+    .service-section li ul li::before {
+      content: "■";
+      color: #facc15;
+    }
+    .service-section p {
+      margin-bottom: 16px;
+      color: #4b5563;
+    }
+
+    /* Footer */
+    footer {
+      background: #020617;
+      color: #9ca3af;
+      padding: 22px 16px 16px;
+      border-top: 1px solid #111827;
+      font-size: 0.78rem;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .footer-title {
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .footer-title span {
+      color: #facc15;
+    }
+    .footer-links a:hover {
+      color: #facc15;
+    }
+    .footer-bottom {
+      max-width: 1120px;
+      margin: 10px auto 0;
+      padding-top: 8px;
+      border-top: 1px solid rgba(55,65,81,0.9);
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .company-header {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+      }
+      .company-contact {
+        text-align: center;
+      }
+      .terms-card {
+        padding: 32px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="Maa Ghura Digital Logo" />
+          <div class="logo-text">
+            MAA <span>GHURA</span> DIGITAL
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../area/area.html">Our Areas</a>
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#why">Why MGD</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../work-portfolio.html">Our Work</a>
+        </div>
+
+        <div class="nav-cta">
+          <button class="btn-small" onclick="window.location.href='../index.html#contact'">
+            Book a Call
+          </button>
+        </div>
+
+        <div class="nav-toggle" id="navToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+
+      <div class="nav-links-mobile" id="navMobile">
+        <a href="../index.html" onclick="toggleNav()">Home</a>
+        <a href="../area/area.html" onclick="toggleNav()">Our Areas</a>
+        <a href="../index.html#services" onclick="toggleNav()">Services</a>
+        <a href="../index.html#why" onclick="toggleNav()">Why MGD</a>
+        <a href="../index.html#contact" onclick="toggleNav()">Contact</a>
+        <a href="../work-portfolio.html" onclick="toggleNav()">Our Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Terms & Conditions Section -->
+  <section>
+    <div class="container">
+      <div class="section-label">Legal</div>
+      <h2 class="section-title">Terms & <span>Conditions</span></h2>
+      <p class="section-sub">
+        These terms govern all services provided by Maa Ghura Digital. Please read them carefully before engaging our services.
+      </p>
+
+      <div class="terms-card">
+        <!-- Company Header Mimic -->
+        <div class="company-header">
+          <div class="company-logo-side">
+            <img src="logo.png" alt="Maa Ghura Digital Logo" />
+            <div>
+              <div class="company-logo-text">MAA GHURA DIGITAL</div>
+              <small>SINCE 2024</small>
+            </div>
+          </div>
+          <div class="company-contact">
+            <p><strong>Email:</strong> maaghuradigital@gmail.com</p>
+            <p><strong>Phone:</strong> +91-9004269842</p>
+            <p><strong>WhatsApp:</strong> +91-9004269842</p>
+            <p><strong>Email:</strong> Manish57527@gmail.com</p>
+            <p><strong>Locations:</strong> Lucknow, Mumbai & Ahmedabad</p>
+          </div>
+        </div>
+
+        <!-- Basic Company Details -->
+        <h3 style="font-size:1.6rem; color:#111827; margin-bottom:24px;">Basic Company Details</h3>
+        <p style="margin-bottom:16px;"><strong>Company Name:</strong> Maa Ghura Digital</p>
+
+        <h4 style="margin:32px 0 16px;">Types of Services</h4>
+        <table class="terms-table">
+          <tbody>
+            <tr><td>Lead Generation</td><td>(Facebook/Instagram/Google ads, Landing pages, etc.)</td></tr>
+            <tr><td>Website Development</td><td>(Basic & Advance website with SEO)</td></tr>
+            <tr><td>Application Development</td><td>(Web Application & APK Applications)</td></tr>
+            <tr><td>CRM Development</td><td>(Best Budget CRM for Medium Size Business)</td></tr>
+            <tr><td>IT Services & Solutions</td><td>(PC, Dialer GSM, Database & CCTV Security)</td></tr>
+          </tbody>
+        </table>
+
+        <p style="margin-bottom:32px;"><strong>Location:</strong> Mumbai, Lucknow & Ahmedabad</p>
+
+        <p style="font-size:1.05rem; margin-bottom:32px;">
+          These Terms and Conditions (“Terms”) govern the use of services provided by MGD (“Company”, “we”, “us”) to any client (“Client”, “you”) for digital marketing, lead generation, and website development services in India.
+        </p>
+
+        <!-- Index Table -->
+        <h4 style="margin-bottom:16px;">Index</h4>
+        <table class="terms-table">
+          <thead>
+            <tr><th>Sr. No</th><th>Service Name</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><a href="#lead-generation">Lead Generation</a></td></tr>
+            <tr><td>2</td><td><a href="#website-development">Website Development</a></td></tr>
+            <tr><td>3</td><td><a href="#crm-development">CRM Development & Application Development</a></td></tr>
+            <tr><td>4</td><td><a href="#it-services">IT Services & Solutions</a></td></tr>
+          </tbody>
+        </table>
+
+        <!-- Service Sections -->
+        <div id="lead-generation" class="service-section">
+          <h3>1. Lead Generation Services</h3>
+          <p><strong>We will:</strong></p>
+          <ul>
+            <li>Set up and manage ad campaigns on platforms such as Meta (Facebook, Instagram), Google, etc., to generate leads as per agreed targeting and budget.</li>
+            <li>Share leads in the agreed format (Excel, CRM, WhatsApp, email, etc.).</li>
+          </ul>
+          <p><strong>We do not guarantee:</strong></p>
+          <ul>
+            <li>Any minimum number of leads, sales, or revenue, because performance depends on platform algorithms, competition, audience, and your sales process.</li>
+            <li>Quality of each lead (e.g. whether the person actually buys, attends, or answers calls).</li>
+          </ul>
+          <p>MGD will provide lead-generation services using platforms such as Meta (Facebook/Instagram) and other agreed channels, with the objective of generating relevant enquiries for the Client's business.</p>
+          <p>Each engagement is planned as a 3-month project, as this period is typically required to test, optimize, and reach the full potential of the campaigns and understand the target audience and best-performing creatives.</p>
+
+          <h4>Fees, project term and renegotiation</h4>
+          <ul>
+            <li><strong>Service fee (management fee):</strong>
+              <ul>
+                <li>The Client agrees to pay a service fee of ₹10,000 per month, for a minimum initial term of 3 months (total ₹30,000 for the initial project term).</li>
+              </ul>
+            </li>
+            <li><strong>Payment options:</strong>
+              <ul>
+                <li>The Client may either:</li>
+                <li>Pay ₹10,000 every month in advance, or</li>
+                <li>Pay the full 3-month fee (₹30,000) in advance at the start of the project.</li>
+              </ul>
+            </li>
+            <li><strong>Renegotiation after 3 months:</strong>
+              <ul>
+                <li>After the initial 3-month period, both parties may review performance and may renegotiate the service fee and/or scope for any extension of services.</li>
+                <li>Any continued work after the initial term will be subject to a fresh mutual agreement (new monthly fee, revised goals).</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Ad spend and budget handling</h4>
+          <ul>
+            <li>The marketing budget/ad spend for Facebook, Instagram, or other platforms is separate from the MGD service fee.</li>
+            <li>All ad spend is to be paid directly by the Client to the advertising platforms (for example, Meta / Facebook Ads Manager), using the Client’s own payment methods.</li>
+            <li>MGD does not receive any commission, rebate, or benefit from the Client’s ad budget, other than the agreed service fee.</li>
+          </ul>
+
+          <h4>Facebook/Meta account bans and balance</h4>
+          <ul>
+            <li>The advertising account, page, and Business Manager used for campaigns are owned and controlled by the Client (unless otherwise explicitly agreed in writing).</li>
+            <li>The Client understands that Facebook/Meta may suspend, restrict, or ban an account or reject ads at its sole discretion, for reasons including but not limited to: policy violations, payment issues, unusual activity, content decisions, or automated reviews.</li>
+            <li>If the ad account or page is banned, restricted, or disabled, any remaining balance or amounts held by Facebook/Meta are governed solely by Facebook/Meta’s policies.</li>
+            <li>Since the marketing budget is paid directly by the Client to Facebook/Meta and MGD does not benefit financially from that budget, MGD is not responsible or liable for any loss of funds remaining in a banned or restricted account.</li>
+            <li>In case of such issues, MGD may assist the Client (if requested) in:
+              <ul>
+                <li>Submitting appeals to the platform, or</li>
+                <li>Setting up new campaigns/accounts, but such assistance is a best-effort service only and does not guarantee recovery of the account, ads, or any balance. Any extra work required may be billed separately if it goes beyond the original agreed scope.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Performance and results</h4>
+          <ul>
+            <li>While MGD will use reasonable skill and care to set up, manage, and optimize campaigns, lead generation depends on multiple external factors (platform algorithms, competition, market demand, Client’s sales follow-up, etc.).</li>
+            <li>Therefore, MGD does not guarantee any specific number of leads, cost-per-lead, sales volume, or revenue, and fees paid to MGD are non-refundable once work for the period has commenced.</li>
+          </ul>
+        </div>
+
+        <div id="website-development" class="service-section">
+          <h3>2. Website Development Services</h3>
+
+          <h4>Scope of work and timeline</h4>
+          <ul>
+            <li>MGD will design and develop a basic business website for the Client based on the content, branding, and requirements shared by the Client.</li>
+            <li>The standard timeline for initial design and development is one week from the date the Client provides all required content (text, images, logo, and other materials) and makes the agreed advance payment.</li>
+            <li>The one-week timeline may be adjusted if there are delays in content, feedback, or approvals from the Client.</li>
+          </ul>
+
+          <h4>Hosting and domain</h4>
+          <ul>
+            <li>By default, the website will be hosted on MGD’s hosting infrastructure.</li>
+            <li>The Client agrees to pay a hosting fee of ₹50 per month, which will be billed as a single payment for 12 months in advance (₹600 per year) for ease of administration.</li>
+            <li>If the Client prefers a separate domain and hosting package in their own name, MGD can arrange this at an additional cost of ₹1,400 per year (domain + basic hosting), payable annually in advance.</li>
+            <li>Domain registration, renewal, and hosting renewal are the Client’s responsibility; failure to pay renewal fees on time may result in downtime or loss of domain, for which MGD is not responsible.</li>
+          </ul>
+
+          <h4>Delivery, revisions, and acceptance</h4>
+          <ul>
+            <li>The website will be shown to the Client for review before final launch.</li>
+            <li>The project fee includes:
+              <ul>
+                <li>Initial design and development as agreed.</li>
+                <li>A limited number of minor text or image adjustments before final delivery (for example, up to 1–2 rounds of small edits).</li>
+              </ul>
+            </li>
+            <li>Once the Client confirms that the website is approved or the website is made live at the Client’s request, the project is considered delivered and accepted.</li>
+          </ul>
+
+          <h4>Post-delivery changes and additional work</h4>
+          <ul>
+            <li>Any changes requested after delivery/acceptance will be treated as additional work and charged separately.</li>
+            <li>Examples of chargeable changes include (but are not limited to):
+              <ul>
+                <li>Adding new pages or sections.</li>
+                <li>Redesigning layouts or changing the theme.</li>
+                <li>Adding new features or integrations (forms, payment gateways, chat, booking, etc.).</li>
+                <li>Major content restructuring beyond simple text replacement.</li>
+              </ul>
+            </li>
+            <li>The cost for post-delivery changes will depend on the type and amount of work required and will typically range from ₹1,000 to ₹12,000 per change request or bundle of tasks.</li>
+            <li>MGD will communicate the estimated cost for requested changes in advance, and work will start only after the Client's approval of the cost.</li>
+          </ul>
+
+          <h4>Client responsibilities</h4>
+          <ul>
+            <li>The Client must provide accurate and lawful content (text, images, videos, etc.) and confirms that they have the right to use all such material.</li>
+            <li>The Client is responsible for reviewing and approving the website within a reasonable timeframe and notifying MGD about any issues or required corrections before final acceptance.</li>
+            <li>MGD is not responsible for issues caused by third-party services (hosting providers, domain registrars, plugins, external scripts, etc.), but will provide reasonable assistance where possible as part of paid support or maintenance.</li>
+          </ul>
+
+          <h4>No performance guarantee and limitation of liability</h4>
+          <ul>
+            <li>MGD will build the website with reasonable skill and care, but does not guarantee any specific business results such as search engine rankings, traffic levels, or sales, unless such SEO or marketing services are explicitly included in a separate agreement.</li>
+            <li>To the maximum extent permitted by law, MGD's total liability in connection with the website development service is limited to the amount actually paid by the Client to MGD for that specific website project.</li>
+          </ul>
+        </div>
+
+        <div id="crm-development" class="service-section">
+          <h3>3. CRM Development & Application Development Services</h3>
+
+          <h4>Scope and timeline</h4>
+          <ul>
+            <li>MGD will design and develop a custom CRM tailored to the Client's business processes, starting from scratch based on the requirements shared by the Client.</li>
+            <li>Typical development time for the initial version of the CRM is 1 week to 10 days, starting from the date the Client provides all required details, content, and pays the agreed advance.</li>
+            <li>The CRM may include modules such as leads, customers, tasks, follow-ups, and basic reports, strictly as listed in the approved proposal or scope document.</li>
+          </ul>
+
+          <h4>Maintenance, support and IT responsibility</h4>
+          <ul>
+            <li>The CRM requires ongoing technical maintenance (server upkeep, updates, security, and troubleshooting).</li>
+            <li>The Client has two options:
+              <ul>
+                <li>If the Client has an in-house IT person/team capable of managing hosting, servers, and basic technical issues, they may choose to handle maintenance themselves after delivery.</li>
+                <li>Otherwise, the Client is strongly advised to take Maintenance Services from MGD so that the CRM remains updated, stable, and supported.</li>
+              </ul>
+            </li>
+            <li>Maintenance from MGD includes:
+              <ul>
+                <li>Basic server monitoring and restarts.</li>
+                <li>Applying routine updates and security patches where required.</li>
+                <li>Fixing new technical issues related to the environment, not caused by scope changes or misuse.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Maintenance fees and payment</h4>
+          <ul>
+            <li>Maintenance is charged on a monthly basis, with the option to pay monthly or in advance for a longer period.</li>
+            <li>The standard maintenance fee is ₹800 per month, payable:
+              <ul>
+                <li>Either every month in advance, or</li>
+                <li>As a one-time advance payment covering multiple months (for example, 6 or 12 months) as agreed in writing.</li>
+              </ul>
+            </li>
+            <li>Maintenance fees are separate from the one-time CRM development cost.</li>
+            <li>If the Client does not pay the maintenance fee on time:
+              <ul>
+                <li>MGD may suspend maintenance and support until dues are cleared.</li>
+                <li>Any work needed to bring the CRM back to stable condition after a long gap may be billed separately.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Changes and additional development</h4>
+          <ul>
+            <li>Any changes requested after delivery are charged similarly to website services:
+              <ul>
+                <li>Small edits and minor configuration changes may be billed at lower amounts.</li>
+                <li>Larger changes such as new modules, new reports, or big logic changes can be billed at higher amounts.</li>
+              </ul>
+            </li>
+            <li>As a guideline, the cost of changes and extra features can range from ₹1,000 to ₹12,000 or more per request, depending on the work required and time involved.</li>
+            <li>MGD will share an estimate for each change request, and work will start only after the Client approves the additional cost.</li>
+          </ul>
+
+          <h4>Database, local server and re-setup charges</h4>
+          <ul>
+            <li>The CRM may run on a local PC/server or a specific machine for the database and application, depending on the setup chosen.</li>
+            <li>The Client must ensure that:
+              <ul>
+                <li>The database PC/server remains powered on, properly connected, and not formatted or reset without prior backup.</li>
+                <li>Basic physical and network conditions (electricity, internet, hardware health) are maintained.</li>
+              </ul>
+            </li>
+            <li>If the database PC/server is shut down, formatted, changed, or moved and MGD needs to re-setup the server or CRM environment, this will be treated as a separate onsite/remote support visit.</li>
+            <li>Re-setup or visit charges can range from ₹500 to ₹1,800 per visit, depending on the complexity, location, and time required.</li>
+            <li>These re-setup charges are not included in the standard monthly maintenance fee unless explicitly stated.</li>
+          </ul>
+
+          <h4>Client responsibilities and limitations</h4>
+          <ul>
+            <li>The Client is responsible for:
+              <ul>
+                <li>Providing accurate process details and requirements before development.</li>
+                <li>Keeping hardware and network infrastructure (PCs, routers, etc.) in working condition.</li>
+                <li>Taking regular backups if agreed as a Client-side responsibility.</li>
+              </ul>
+            </li>
+            <li>MGD is not responsible for data loss or downtime caused by:
+              <ul>
+                <li>Power failures, hardware damage, viruses, or network issues at the Client's premises.</li>
+                <li>Unauthorized access or changes made by the Client's own staff or third parties.</li>
+              </ul>
+            </li>
+            <li>While MGD will use reasonable skill and care in building and maintaining the CRM, no guarantee is given for any particular business results (lead volume, sales, revenue, etc.), as these depend on how the Client uses the system.</li>
+          </ul>
+        </div>
+
+        <div id="it-services" class="service-section">
+          <h3>4. IT Services & Solutions</h3>
+          <p>Terms and conditions for IT Services & Solutions (PC, Dialer GSM, Database & CCTV Security) are provided on a project-specific basis. Detailed terms will be included in the individual project agreement or quotation. Please contact us for specific details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-title">
+            MAA <span>GHURA</span> DIGITAL
+          </div>
+          <p>
+            Maa Ghura Digital is a technology partner for CRM development, lead generation engines,
+            websites, and IT devices – blending modern code with practical business workflows.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#why">Why MGD</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Portfolio</div>
+          <ul class="footer-links">
+            <li><a href="websites.html">Websites</a></li>
+            <li><a href="crm.html">CRM Systems</a></li>
+            <li><a href="it-services.html">IT Services</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Maa Ghura Digital. Technology & IT services studio. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+
+    function toggleNav() {
+      if (!navMobile) return;
+      const isOpen = navMobile.style.display === 'flex';
+      navMobile.style.display = isOpen ? 'none' : 'flex';
+    }
+
+    if (navToggle) {
+      navToggle.addEventListener('click', toggleNav);
+    }
+  </script>
+</body>
+</html>
